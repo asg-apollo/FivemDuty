@@ -15,7 +15,7 @@ class Departments(str, Enum):
 async def on_ready():
     print(f"We have logged in as {bot.user}")
 
-@bot.slash_command(guild_ids=["810310781639983164", "822394570284990494", "1106378954882949250"])
+@bot.slash_command(guild_ids=["99999999999999999999"])
 async def ondutyhours(ctx, steam_user: str):
     print(steam_user)
     totalMinutes = 0
@@ -24,8 +24,8 @@ async def ondutyhours(ctx, steam_user: str):
     week_ago = week_ago.replace(hour=0, minute=0, second=0)
     print(week_ago)
 
-    guild = bot.get_guild(822394570284990494)
-    channel = guild.get_channel(1108644450600755270)
+    guild = bot.get_guild(99999999999999999999)
+    channel = guild.get_channel(99999999999999999999)
 
     totalHours = 0
     totalMinutes = 0
@@ -55,15 +55,15 @@ async def ondutyhours(ctx, steam_user: str):
 
 
 
-@bot.slash_command(guild_ids=["810310781639983164", "822394570284990494", "1106378954882949250"])
+@bot.slash_command(guild_ids=["99999999999999999999"])
 async def officer_list(ctx, department: Departments):
     totalMinutes = 0
     today = DT.datetime.now()
     week_ago = today - DT.timedelta(days=today.weekday())
     week_ago = week_ago.replace(hour=0, minute=0, second=0)
 
-    guild = bot.get_guild(822394570284990494)
-    channel = guild.get_channel(1108644450600755270)
+    guild = bot.get_guild(99999999999999999999)
+    channel = guild.get_channel(99999999999999999999)
 
     totalHours = 0
     totalMinutes = 0
